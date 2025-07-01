@@ -1,16 +1,18 @@
 import os
 import shutil
 
-folder=os.listdir('/home/dell/Desktop/autoPack')
-src="/home/dell/Desktop/autoPack"
+folder=os.listdir('YOUR_FILE_PATH')
+src="YOUR_FILE_PATH"
+
+#Add Your file extensions here.
 catigorys={
     "Image":[".jpg",".png",".gif"],
     "Document":[".pdf",".txt",".docx"],
     "Archive":[".zip",".rar",".7z"],
     "Music":[".mp3",".wav"],
     "Videos":[".mp4",".mkv"]
-
 }
+
 
 for i in folder:
     root,extention=os.path.splitext(i)
